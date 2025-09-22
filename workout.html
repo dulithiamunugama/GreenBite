@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./workoutStyle.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon.ico.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon.ico.png">
+    <link rel="manifest" href="manifest.json">
+    <title>GreenBite</title>
+</head>
+<body>
+    <header>
+  <div class="logo">
+    <a href="./index.html"><img src="./img/logo.png" alt="GreenBite logo"></a>
+  </div>
+  <div class="menu-toggle">☰</div>
+  <nav>
+    <ul>
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./recipes.html">Recipes</a></li>
+      <li><a href="./calculator.html">Calculator</a></li>
+      <li><a href="./workout.html">Fitness</a></li>
+      <li><a href="./mindfull.html">Mindfulness</a></li>
+      <li><a href="./contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+</header>
+  
+    <div class="container">
+      <section class="page-title">
+      <h1>Workout Generator</h1>
+      <p>Get personalized workout plans based on your equipment and fitness goals</p>
+      </section>
+
+      <div class="content">
+      <!-- Left Card -->
+        <div class="card setup">
+          <h2>⚙️ Workout Setup</h2>
+
+          <label>Target Body Part</label>
+          <div class="options">
+            <button>Arms</button>
+            <button>Legs</button>
+            <button>Core</button>
+            <button class="active">Full body</button>
+          </div>
+
+          <label for="equipment">Available Equipment</label>
+          <select id="equipment">
+            <option>No Equipment</option>
+            <option>Dumbbells</option>
+            <option>Resistance Bands</option>
+            <option>Gym Equipment</option>
+          </select>
+
+          <label for="difficulty">Difficulty Level</label>
+          <select id="difficulty">
+            <option>Beginner (15 min)</option>
+            <option selected>Intermediate (25 min)</option>
+            <option>Advanced (40 min)</option>
+          </select>
+
+          <button class="generate-btn">Generate Workout</button>
+        </div>
+      
+
+      <!-- Right Card -->
+      <div class="card preview">
+        <h2>🏋️ Ready to Get Fit?</h2>
+        <p>Configure your workout preferences and generate a personalized exercise routine</p>
+        <small>Select your target body part, available equipment, and difficulty level to get started</small>
+      </div>
+    </div>
+  </div>
+       
+        <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+
+      <!-- Brand -->
+      <div class="footer-section">
+        <img src="./img/Logo.png">
+
+        <p>Your companion for a healthier lifestyle. Discover nutritious recipes, track your fitness, and find your inner peace.</p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./recipes.html">Recipes</a></li>
+          <li><a href="./calculator.html">Calculator</a></li>
+          <li><a href="./workout.html">Workouts</a></li>
+          <li><a href="./mindfull.html">Mindfulness</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="footer-section">
+        <h3>Contact</h3>
+        <p><i class="fas fa-map-marker-alt"></i> 123 Health St, Wellness City</p>
+        <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+        <p><i class="fas fa-envelope"></i> hello@greenbite.com</p>
+      </div>
+
+      <!-- Newsletter -->
+      <div class="footer-section">
+        <h3>Newsletter</h3>
+        <p>Get weekly health tips and recipe updates delivered to your inbox.</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Enter your email" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 GreenBite. All rights reserved. Built with 💗 for your health.</p>
+    </div>
+  </footer>
+
+</html>

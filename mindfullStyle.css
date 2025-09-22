@@ -1,0 +1,458 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #ddfced;
+    color: #333;
+    line-height: 1.6;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}    
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+  width:"200px"
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    font-size: larger;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #4a5568;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #2ecc71;
+}
+
+.page-title {
+  text-align: center;
+  padding: 50px 20px 30px;
+}
+
+.page-title h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.page-title p {
+  color: #6b7280;
+  font-size: 16px;
+}
+
+/* Header */
+header {
+  margin-bottom: 30px;
+}
+
+header h1 {
+  margin: 10px 0;
+  font-size: 28px;
+  color: #222;
+}
+
+header p {
+  color: #555;
+}
+
+/* Grid Layout */
+.grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-bottom: 30px;
+}
+
+/* Card Styling */
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  width: 40%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+/* Breathing Circle */
+.circle {
+  width: 120px;
+  height: 120px;
+  margin: 15px auto;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #7c3aed, #9333ea);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 10px 16px;
+  margin: 5px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn.primary {
+  background: #4f46e5;
+  color: white;
+}
+
+.btn.start {
+  background: #22c55e;
+  color: white;
+}
+
+.btn.reset {
+  background: #e5e7eb;
+  color: #333;
+}
+
+/* Timer */
+.time {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 10px 0;
+  color: #4f46e5;
+}
+
+.time-options button {
+  margin: 5px;
+  padding: 6px 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background: #f9fafb;
+  cursor: pointer;
+}
+
+.time-options button.active {
+  background: #7c3aed;
+  color: white;
+}
+
+/* Custom Timer */
+.custom-time {
+  margin-top: 10px;
+}
+
+.custom-time input {
+  padding: 5px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+/* Sounds */
+.sound-options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.sound-options button {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #f9fafb;
+  cursor: pointer;
+}
+
+.sound-options button.active {
+  border: 2px solid #7c3aed;
+  background: #ede9fe;
+}
+
+.note {
+  font-size: 12px;
+  color: #666;
+  margin-top: 10px;
+}
+
+/* Progress */
+.sessions {
+  font-size: 40px;
+  font-weight: bold;
+  color: #7c3aed;
+  margin: 10px 0;
+}
+
+.achievement {
+  background: #ede9fe;
+  padding: 10px;
+  border-radius: 8px;
+  margin: 15px 0;
+}
+
+ul {
+  text-align: left;
+  padding-left: 20px;
+  font-size: 14px;
+  color: #444;
+}
+
+
+
+/* Footer Styling */
+.footer {
+  background-color: #0f172a;
+  color: #d1d5db;
+  padding: 40px 20px 20px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Sections */
+.footer-section h2,
+.footer-section h3 {
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+
+.footer-section img{
+  width:"200px"
+}
+
+.footer-section p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section ul li {
+  margin: 8px 0;
+}
+
+.footer-section ul li a {
+  color: #d1d5db;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #22c55e;
+}
+
+/* Social Icons */
+.social-icons a {
+  color: #d1d5db;
+  font-size: 1.2rem;
+  margin-right: 12px;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #22c55e;
+}
+
+/* Newsletter */
+.newsletter-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.newsletter-form input {
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+  font-size: 0.9rem;
+  background: #1e293b;
+  color: #fff;
+}
+
+.newsletter-form button {
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  background: #22c55e;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.newsletter-form button:hover {
+  background: #16a34a;
+}
+
+/* Bottom bar */
+.footer-bottom {
+  margin-top: 30px;
+  text-align: center;
+  border-top: 1px solid #1e293b;
+  padding-top: 15px;
+  font-size: 0.85rem;
+  color: #9ca3af;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    flex-direction: column;
+  }
+  
+  .card {
+    width: 100%;
+  }
+  
+  .sound-options {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  /* Header and Navigation */
+  header {
+    flex-direction: column;
+    padding: 10px;
+  }
+  
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    display: none; /* Hidden by default on mobile */
+    width: 100%;
+  }
+  
+  nav.active ul {
+    display: flex;
+  }
+  
+  /* Mobile menu toggle button */
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 24px;
+  }
+  
+  /* Calculator page */
+  .calculator {
+    grid-template-columns: 1fr;
+  }
+  
+  /* Recipe cards */
+  .card-container, .second-card-container, .third-card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .card {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  /* Mindfulness grid */
+  .grid {
+    flex-direction: column;
+  }
+  
+  .card {
+    width: 100%;
+  }
+  
+  /* Workout generator */
+  .content {
+    grid-template-columns: 1fr;
+  }
+  
+  .preview {
+    width: 100%;
+  }
+  
+  /* Footer */
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+  
+  /* Contact page */
+  .contact-section {
+    grid-template-columns: 1fr;
+  }
+  
+  /* Home page cards */
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .card {
+    max-width: 100%;
+  }
+  
+  .top-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Further adjustments for very small screens */
+  .page-title h1 {
+    font-size: 24px;
+  }
+  
+  .page-title p {
+    font-size: 14px;
+  }
+  
+  .search-filter {
+    flex-direction: column;
+  }
+  
+  /* Mindfulness timer options */
+  .time-options {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .time-options button {
+    margin: 5px;
+  }
+  
+  /* Workout options */
+  .options {
+    flex-direction: column;
+  }
+}
